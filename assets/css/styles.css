@@ -1,0 +1,778 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color: #F3F5F6;
+    font-family: 'fira sans',sans-serif;
+    width: 100%;
+    color:#555;
+}
+
+hr{
+    height: 2px;
+    background-color: #f7f7f7;
+}
+
+a{
+    color:#7279fd;
+}
+
+a:hover{
+    color:#3138c2;
+}
+
+/*//////////////////////////////////////////*/
+.container-fluid{
+    display: flex;
+}
+
+/*//////////////////////////////////////////*/
+
+.navbar {
+    padding: 0.5rem 1.5rem 3rem 1.5rem;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    box-shadow: 0px 4px 15px #EFF2F6;
+}
+
+.navbody{
+    padding: 0 -1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 15px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #1c0d73;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-family: 'poppins',sans-serif;
+    font-weight: 600;
+    padding: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color:#960c7d;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-logo:hover{
+    color:#d122b1;
+}
+
+/*//////////////////////////////////////////*/
+.side-bar{
+    width: 25%;
+    background-color: #fff;
+    box-shadow: 0px 4px 15px #EFF2F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 15px 0;
+    margin-bottom: 20px;
+}
+
+.side-bar .content{
+    padding: 30px 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo a{
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: 'poppins',sans-serif;
+    text-align: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    color:#960c7d;
+    transition: 0.2s ease-in-out;
+}
+
+.logo a:hover{
+    color:#d122b1;
+}
+
+.logo p{
+    font-size: 12px;
+    color:#777;
+}
+
+.logo .coronavirus{
+    width:100%;
+    height: 130px;
+    background-image: url('../img/covid-logo.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-color: #fff;
+}
+
+.side-bar .content nav ul li{
+    padding: 15px 25px;
+}
+
+.side-bar .content nav ul li a{
+    color:#2183a7;
+    font-weight: 500 !important;
+}
+
+.flags{
+    display: flex;
+    align-items: center;
+}
+
+.flags .srilanka{
+    width:80px;
+    height: 40px;
+    background-image: url('../img/srilanka.svg');
+    background-position: center;
+    background-size: cover;
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+
+.flags .world{
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/world.png');
+    background-position: center;
+    background-size: cover;
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+
+/*//////////////////////////////////////////*/
+
+.container{
+    width: 75%;
+    position: relative;
+    margin: 0 15px;
+}
+
+.topBar{
+    width: 80%;
+    background-color: #fff;
+    position: absolute;
+    top:0;
+    right: 0;
+    margin-right: -15px;
+    border-radius: 0 0 0 25px;
+    box-shadow: 0px 4px 15px #EFF2F6;
+}
+
+.topBar nav ul{
+    display:flex;
+    justify-content: center;
+}
+.topBar nav ul li{
+    padding: 10px 30px;
+}
+
+.topBar nav ul li a{
+    transition: .1s ease-in-out;
+}
+
+.topBar nav ul li a:hover{
+    color: #d122b1;
+}
+/* .figures{
+    margin:0 50px 0 50px;  
+} */
+
+.title{
+    font-size: 18px;
+    font-weight: 500;
+    color: #444;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.card{
+    width: 260px;
+    height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px #EFF2F6;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 0px 0px 10px 10px;
+    transition: .3s linear all;
+}
+
+.card:hover{
+    box-shadow: 4px 4px 20px #DADADA;
+    transition: .2s linear all;
+}
+
+.cardIcon{
+    width: 48px;
+    height: 48px;  
+    position: absolute;
+    margin: 30px 20px;
+}
+
+.card .title{
+    position: absolute;
+    width: 235px;
+    height: 22px;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: right;
+    color: #777777;
+}
+
+.card .value{
+    position: absolute;
+    width: 235px;
+    height: 50px;
+    margin-top:40px;
+    font-weight: 500;
+    font-size: 48px;
+    text-align: right;
+}
+
+.card2{
+    width: 200px;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px #EFF2F6;
+    border-radius: 15px;
+    margin:0px 10px 20px 10px;
+    display: inline-block;
+    transition: .3s linear all;
+}
+
+.card2:hover{
+    box-shadow: 4px 4px 20px #DADADA;
+    transition: .2s linear all;
+}
+
+.card2 .cardIcon{
+    width: 18px;
+    height: 18px;  
+    position: absolute;
+    margin: 15px 20px;
+}
+
+.card2 .title{
+    position: absolute;
+    width: 180px;
+    height: 22px;
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: right;
+    color: #777777;
+}
+
+.card2 .value{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    margin-top:20px;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: right;
+}
+
+.card3{
+    width: 280px;
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px #EFF2F6;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 0px 0px 10px 10px;
+    transition: .3s linear all;
+}
+
+.card3:hover{
+    box-shadow: 4px 4px 20px #DADADA;
+    transition: .2s linear all;
+}
+
+.card3 .cardIcon{
+    width: 48px;
+    height: 48px;  
+    position: absolute;
+    margin: 50px 20px;
+}
+
+.card3 .title{
+    position: absolute;
+    width: 260px;
+    height: 22px;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: right;
+    color: #777777;
+}
+
+.card3 .value{
+    position: absolute;
+    width: 260px;
+    height: 50px;
+    margin-top:110px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: right;
+}
+
+.card3 .value2{
+    position: absolute;
+    width: 260px;
+    height: 50px;
+    margin-top:50px;
+    font-weight: 500;
+    font-size: 45px;
+    text-align: right;
+}
+
+.chartGroup{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.chart1{
+    background-color: #fff;
+    margin:10px 10px 25px 10px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: .3s linear all;
+}
+
+.chart1:hover{
+    box-shadow: 4px 4px 20px #DADADA;
+    transition: .2s linear all;
+}
+
+/* .chart2{
+    width:100%;
+    background-color: #fff;
+    margin:0 10px 25px 10px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: .3s linear all;
+    display: inline-block;
+} */
+
+.chart2:hover{
+    box-shadow: 4px 4px 20px #DADADA;
+    transition: .2s linear all;
+}
+/*//////////////////////////////////////////*/
+.topMargin{
+    margin-top:65px !important;
+}
+.bold{
+    font-weight: bold;
+}
+.blue{
+    color: #6b85de;
+}
+
+.green{
+    color: #79ca53;
+}
+
+.red{
+    color: #ff8484;
+}
+
+.orange{
+    color: #f1ad43;
+}
+
+footer{
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 20px;
+    background: #fff;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font-size: 1vw;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(45deg, #a68eff, #00aeff);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.case{
+    background-color: #fff;
+    background-position: center;
+    background-image: url('../img/case.gif');
+    background-size: cover;
+}
+
+.death{
+    background-color: #fff;
+    background-position: center;
+    background-image: url('../img/death.gif');
+    background-size: cover;
+}
+
+.recovered{
+    background-color: #fff;
+    background-position: center;
+    background-image: url('../img/recovered.gif');
+    background-size: cover;
+}
+
+.suspected{
+    background-color: #fff;
+    background-position: center;
+    background-image: url('../img/suspected.gif');
+    background-size: cover;
+}
+img{
+    border:none;
+    outline: none;
+}
+@media only screen and (max-width: 640px) {
+    /* .figures{
+        margin:0 10px;
+    } */
+    .topMargin{
+        margin-top: 0 !important;
+    }
+    .container-fluid{
+        flex-direction: column;
+    }
+
+    .navbar{
+        display: block;
+    }
+
+    .nav-menu {
+        margin-top: -100%;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active {
+        margin-top: 10px;
+    }
+
+    .nav-item {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .nav-item a{
+        font-size: 1rem;
+        padding: 15px 50px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #casesChart,#deathsChart,#recoveriesChart,#pcrChart{
+        margin: 0 -15px -20px -15px;
+        border-radius: 15px;
+    }
+
+    .topBar{
+        display: none;
+        /* width: 100%;
+        border-radius: 0; */
+    }
+
+    .side-bar{
+        display: none;
+    }
+
+    .container{
+        position: relative;
+        width: 100%;
+        padding: 20px !important;
+        margin:0px !important;
+    }
+
+    .card{
+        width: 100% !important;
+        margin: 0 15px 20px 0 !important;
+    }
+
+    .card .title{
+        position: absolute;
+        right: 35px;
+    }
+
+    .card .value{
+        position: absolute;
+        right: 35px;
+    }
+
+    .card2{
+        width: 100% !important;
+        margin: 0 15px 20px 0 !important;
+    }
+
+    .card2 .title{
+        position: absolute;
+        right: 35px;
+    }
+
+    .card2 .value{
+        position: absolute;
+        right: 35px;
+    }
+
+    .card3{
+        width: 100% !important;
+        margin: 0 15px 20px 0 !important;
+    }
+
+    .card3 .title{
+        position: absolute;
+        right: 35px;
+    }
+
+    .card3 .value{
+        position: absolute;
+        right: 35px;
+    }
+
+    .card3 .value2{
+        position: absolute;
+        right: 35px;
+    }
+
+    .chartGroup{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0px 20px 0 !important;
+    }
+
+    .chart1{
+        width: 100%;
+        margin: 0 15px 20px 0 !important;
+    }
+
+    footer p{
+        font-size: 1.6vw;
+    }
+  }
+
+@media only screen and (max-width: 900px) {
+    /* .figures{
+        margin:0 10px;
+    } */
+    .topMargin{
+        margin-top: 0 !important;
+    }
+    .container-fluid{
+        flex-direction: column;
+    }
+
+    .navbar{
+        display: block;
+    }
+
+    .nav-menu {
+        margin-top: -100%;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active {
+        margin-top: 10px;
+    }
+
+    .nav-item {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .nav-item a{
+        font-size: 1rem;
+        padding: 15px 50px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #casesChart,#deathsChart,#recoveriesChart,#pcrChart{
+        margin: 0 -15px -20px -15px;
+        border-radius: 15px;
+    }
+
+    .topBar{
+        display: none;
+        /* width: 100%;
+        border-radius: 0; */
+    }
+
+    .side-bar{
+        display: none;
+    }
+
+    .container{
+        position: relative;
+        width: 100%;
+        padding: 20px !important;
+        margin:0px !important;
+    }
+
+    .card{
+        position: relative;;
+        width: 47%;
+        margin: 0 15px 20px 0 !important;
+    }
+
+    .card .title{
+        position: absolute;
+        right: 35px;
+    }
+
+    .card .value{
+        position: absolute;
+        right: 35px;
+    }
+
+    .card2{
+        position: relative;;
+        width: 47%;
+        margin: 0 15px 20px 0 !important;
+    }
+
+    .card2 .title{
+        position: absolute;
+        right: 35px;
+    }
+
+    .card2 .value{
+        position: absolute;
+        right: 35px;
+    }
+
+    .card3{
+        position: relative;;
+        width: 47%;
+        margin: 0 15px 20px 0 !important;
+    }
+
+    .card3 .title{
+        position: absolute;
+        right: 35px;
+    }
+
+    .card3 .value{
+        position: absolute;
+        right: 35px;
+    }
+
+    .card3 .value2{
+        position: absolute;
+        right: 35px;
+    }
+
+    .chartGroup{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0px 20px 0 !important;
+    }
+
+    .chart1{
+        width: 100%;
+        margin: 0 15px 20px 0 !important;
+    }
+
+    footer p{
+        font-size: 1.5vw;
+    }
+  }

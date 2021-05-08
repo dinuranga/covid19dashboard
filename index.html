@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css"/>
+    <link rel="icon" href="./assets/img/favicon.png" sizes="16x16" type="image/png">
+    <title>COVID-19 DASHBOARD</title>
+</head>
+
+<body class="scrollbar">
+
+    <div class="container-fluid">
+        
+        <div class="side-bar">
+            <div class="content">
+                <div class="logo">
+                    <a href="index.html" class="logo">COVID-19 DASHBOARD</a>
+                    <p>Last Update (<span id="last_update"></span>)</p>
+                    <div class="coronavirus"></div>
+                </div>
+                <nav>
+                    <ul>
+                        <hr><li><a href="#dailyFiguresSL" class="bold">DAILY FIGURES (SRI LANKA)</a></li><hr>
+                        <li><a href="#totalFiguresSL" class="bold">TOTAL FIGURES (SRI LANKA)</a></li><hr>
+                        <li><a href="#deathsChart" class="bold">DEATHS CHART (SRI LANKA)</a></li><hr>
+                        <li><a href="#recoveriesChart" class="bold">RECOVERIES CHART (SRI LANKA)</a></li><hr>
+                        <li><a href="#pcrChart" class="bold">PCR TESTS CHART (SRI LANKA)</a></li><hr>
+                        <li><a href="#dailyFiguresGlobal" class="bold">DAILY FIGURES (GLOBAL)</a></li><hr>
+                        <li><a href="#dailyFiguresGlobal" class="bold">TOTAL FIGURES (GLOBAL)</a></li><hr>
+                    </ul>
+                </nav>
+
+                <div class="flags">
+                    <div class="srilanka"></div>
+                    <div class="world"></div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="navbody">
+                <a href="index.html" class="nav-logo">COVID-19 DASHBOARD</a>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">SUWASARIYA 1999</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Health Bureau (Sri Lanka)</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Hospitals</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="topBar">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="bold">SUWASARIYA 1999</a></li>
+                        <li><a href="#">Health Bureau (Sri Lanka)</a></li>
+                        <li><a href="#">Hospitals</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="figures topMargin" id="dailyFiguresSL">
+                <h3 class="title">Daily Figures (Sri Lanka)</h3>
+                <div class="card">
+                    <div class="cardIcon case"></div>
+                    <span class="title">New Cases</span>
+                    <span class="value blue" id="local_new_cases">0</span>
+                </div>
+                <div class="card">
+                    <div class="cardIcon death"></div>
+                    <span class="title">Deaths</span>
+                    <span class="value red" id="local_new_deaths">0</span>
+                </div>
+                <div class="card">
+                    <div class="cardIcon suspected"></div>
+                    <span class="title">Active Cases</span>
+                    <span class="value orange" id="local_active_cases">0</span>
+                </div>
+            </div>
+
+            <div class="figures" id="totalFiguresSL">
+                <h3 class="title">Total Figures (Sri Lanka)</h3>
+                <div class="card2">
+                    <div class="cardIcon case"></div>
+                    <span class="title">Total Confirmed Cases</span>
+                    <span class="value blue" id="local_total_cases">0</span>
+                </div>
+                <div class="card2">
+                    <div class="cardIcon death"></div>
+                    <span class="title">Total Deaths</span>
+                    <span class="value red" id="local_deaths">0</span>
+                </div>
+                <div class="card2">
+                    <div class="cardIcon suspected"></div>
+                    <span class="title">Suspected & Hospitalized</span>
+                    <span class="value orange" id="local_total_number_of_individuals_in_hospitals">0</span>
+                </div>
+                <div class="card2">
+                    <div class="cardIcon recovered"></div>
+                    <span class="title">Recovered & Discharged</span>
+                    <span class="value green" id="local_recovered">0</span>
+                </div>
+            </div>
+
+            <div class="figures">
+                <div class="chart1">
+                    <div id="casesChart"></div>
+                </div>
+                
+                <div class="chartGroup">
+                    <div class="chart1">
+                        <div id="deathsChart"></div>
+                    </div>
+                    <div class="chart1">
+                        <div id="recoveriesChart"></div>
+                    </div>
+                </div>
+                
+                <div class="chart1">
+                    <div id="pcrChart"></div>
+                </div>
+            </div>
+
+            <div class="figures topMargin" id="dailyFiguresGlobal">
+                <h3 class="title">Daily Figures (Global)</h3>
+                <div class="card">
+                    <div class="cardIcon case"></div>
+                    <span class="title">New Cases</span>
+                    <span class="value blue" id="global_new_cases">0</span>
+                </div>
+                <div class="card">
+                    <div class="cardIcon death"></div>
+                    <span class="title">Deaths</span>
+                    <span class="value red" id="global_new_deaths">0</span>
+                </div>
+            </div>
+
+            <div class="figures" id="totalFiguresGlobal">
+                <h3 class="title">Total Figures (Global)</h3>
+                <div class="card3">
+                    <div class="cardIcon case"></div>
+                    <span class="title">Total Cases</span>
+                    <span class="value2 blue" id="global_total_cases_rounded">0</span>
+                    <span class="value" id="global_total_cases">0</span>
+                </div>
+                <div class="card3">
+                    <div class="cardIcon death"></div>
+                    <span class="title">Total Deaths</span>
+                    <span class="value2 red" id="global_deaths_rounded">0</span>
+                    <span class="value" id="global_deaths">0</span>
+                </div>
+                <div class="card3">
+                    <div class="cardIcon recovered"></div>
+                    <span class="title">global_recovered</span>
+                    <span class="value2 green" id="global_recovered_rounded">0</span>
+                    <span class="value" id="global_recovered">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Developed by <a href="https://facebook.com/maleeshadmax" target="_blank">Maleesha Dinuranga</a>. All Rights Reserved &copy;2021.</p>
+        <p><i>Data Source - <a href="https://hpb.health.gov.lk/en/api-documentation" target="_blank">HPB API(🇱🇰)</a>.</i></p>
+    </footer>  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/currentData.js"></script>
+    <script src="./assets/js/pcrChart.js"></script>
+    <script src="./assets/js/historyData.js"></script>
+    
+</body>
+
+</html>
